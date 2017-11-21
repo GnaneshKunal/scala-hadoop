@@ -2,8 +2,6 @@ package gk.hadoop
 
 import java.net.URI
 
-import org.apache.spark.sql._
-
 import org.apache.hadoop.conf._
 import org.apache.hadoop.fs._
 
@@ -18,14 +16,25 @@ object Basics extends App {
   })
 
   val hdfs = FileSystem.get(new URI("hdfs://localhost:9000/"), new Configuration())
-  val path = new Path("/data/test.txt")
-  val stream = hdfs.open(path)
-  def readLines = Stream.cons(stream.readLine, Stream.continually(stream.readLine()))
+  val path1 = new Path("/data/test.txt")
+  val stream1 = hdfs.open(path1)
 
-  val arr = new Array[Byte](1000)
+  val arr1 = new Array[Byte](1000)
 
-  stream.readFully(0, arr)
+  stream1.readFully(0, arr1)
 
-  arr.foreach(x => print(x.toChar))
+  arr1.foreach(x => print(x.toChar))
+
+  println {
+    "\n==============================="
+  }
+
+  val path2 = new Path("/data/test2.txt")
+  val stream2 = hdfs.open(path2)
+
+  val buff2 = new Array[Byte](20)
+  stream2.read(0, buff2, 0, 20)
+
+  buff2.foreach(x => print{x.toChar})
 
 }
