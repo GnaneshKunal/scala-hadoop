@@ -1,15 +1,14 @@
-package gk.hadoop.book
+package gk.hadoop.book.hdfs
 
 import java.io.InputStream
+import java.net.URI
 
 import org.apache.hadoop.conf._
 import org.apache.hadoop.fs._
-import java.net.URI
-
 import org.apache.hadoop.io.IOUtils
 
 // Display files from a Hadoop fs using FileSystem directly
-object Example3_2 {
+object FileSystemCat {
 
   def main(args: Array[String]): Unit = {
     val uri: String = "hdfs://localhost:9000/data/test.txt"

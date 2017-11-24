@@ -1,13 +1,13 @@
-package gk.hadoop.book
+package gk.hadoop.book.hdfs
 
 import java.net.URI
 
-import org.apache.hadoop.fs._
 import org.apache.hadoop.conf._
+import org.apache.hadoop.fs._
 import org.apache.hadoop.io.IOUtils
 
 // Displaying files from a Hadoop fs on stdout twice using seek()
-object Example3_3 {
+object FileSystemDoubleCat {
 
   def main(args: Array[String]): Unit = {
     val uri = "hdfs://localhost:9000/data/test.txt"

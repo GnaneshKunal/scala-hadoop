@@ -1,12 +1,12 @@
-package gk.hadoop.book
-
-import org.apache.hadoop.fs._
-import org.apache.hadoop.conf._
+package gk.hadoop.book.hdfs
 
 import java.net.URI
 
+import org.apache.hadoop.conf._
+import org.apache.hadoop.fs._
+
 // Delete a file on hdfs
-object Example3_8 {
+object DeleteFile {
 
   val uri: String = "hdfs://localhost:9000/"
   val conf = new Configuration()

@@ -1,12 +1,12 @@
-package gk.hadoop.book
-
-import org.apache.hadoop.fs._
-import org.apache.hadoop.conf._
+package gk.hadoop.book.hdfs
 
 import java.net.URI
 
+import org.apache.hadoop.conf._
+import org.apache.hadoop.fs._
+
 // Demonstration File status Information
-object Example3_5 {
+object ShowFileStatus {
 
   val conf = new Configuration()
   val hdfsURI = "hdfs://localhost:9000/"

@@ -1,12 +1,12 @@
-package gk.hadoop.book
+package gk.hadoop.book.io
 
 import java.io.{InputStream, OutputStream}
 import java.net.URI
 
 import org.apache.hadoop.conf._
-import org.apache.hadoop.io.compress._
 import org.apache.hadoop.fs._
 import org.apache.hadoop.io.IOUtils
+import org.apache.hadoop.io.compress._
 
 // A program to decompress a compressed file using a codec inferred from the file's extension
 object FileDecompressor {

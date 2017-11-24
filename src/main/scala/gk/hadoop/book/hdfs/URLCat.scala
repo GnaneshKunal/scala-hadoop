@@ -1,4 +1,4 @@
-package gk.hadoop.book
+package gk.hadoop.book.hdfs
 
 import java.io.InputStream
 import java.net.URL
@@ -8,7 +8,7 @@ import org.apache.hadoop.io._
 
 
 // Display files from Hadoop fs using URLStreamHandler
-object Example3_1 {
+object URLCat {
 
   URL.setURLStreamHandlerFactory(new FsUrlStreamHandlerFactory())
 

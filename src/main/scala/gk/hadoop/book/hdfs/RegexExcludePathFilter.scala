@@ -1,9 +1,9 @@
-package gk.hadoop.book
-
-import org.apache.hadoop.fs._
-import org.apache.hadoop.conf._
+package gk.hadoop.book.hdfs
 
 import java.net.URI
+
+import org.apache.hadoop.conf._
+import org.apache.hadoop.fs._
 
 // Implement a PathFilter for excluding paths that match a regex
 object Example3_7 {

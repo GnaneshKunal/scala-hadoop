@@ -1,15 +1,15 @@
-package gk.hadoop.book
+package gk.hadoop.book.hdfs
 
-import org.apache.hadoop.fs._
-import org.apache.hadoop.io._
-import org.apache.hadoop.conf._
 import java.io._
 import java.net.URI
 
+import org.apache.hadoop.conf._
+import org.apache.hadoop.fs._
+import org.apache.hadoop.io._
 import org.apache.hadoop.util.Progressable
 
 // Copy a local file to Hadoop fs
-object Example3_4 {
+object FileCopyWithProgress {
 
   def main(args: Array[String]): Unit = {
     val localStr: String = "/home/ub/spark/README.md"

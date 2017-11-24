@@ -1,12 +1,12 @@
-package gk.hadoop.book
-
-import org.apache.hadoop.fs._
-import org.apache.hadoop.conf._
+package gk.hadoop.book.hdfs
 
 import java.net.URI
 
+import org.apache.hadoop.conf._
+import org.apache.hadoop.fs._
+
 // Showing the file statuses for a collection of paths in a hadoop file system.
-object Example3_6 {
+object ListStatus {
 
   val uri: String = "hdfs://localhost:9000/"
   val conf = new Configuration()
