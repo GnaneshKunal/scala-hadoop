@@ -4,4 +4,3 @@ spark-warehouse/
 
 # avro
 *.avro
-*.avsc
