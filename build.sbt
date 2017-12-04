@@ -19,6 +19,12 @@ libraryDependencies += "org.apache.avro" % "avro" % "1.8.2"
 
 libraryDependencies += "org.apache.parquet" % "parquet" % "1.8.2"
 
+libraryDependencies += "org.apache.hbase" % "hbase-client" % "2.0.0-alpha4"
+
+libraryDependencies += "org.apache.hbase" % "hbase" % "2.0.0-alpha4" pomOnly()
+
+libraryDependencies += "org.apache.hbase" % "hbase-common" % "2.0.0-alpha4"
+
 resolvers += "Apache HBase" at "https://repository.apache.org/content/repositories/releases"
 
 resolvers += "Thrift" at "http://people.apache.org/~rawson/repo/"
