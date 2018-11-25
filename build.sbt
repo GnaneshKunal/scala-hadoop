@@ -19,6 +19,12 @@ libraryDependencies += "org.apache.avro" % "avro" % "1.8.2"
 
 libraryDependencies += "org.apache.parquet" % "parquet" % "1.8.2"
 
+libraryDependencies += "org.apache.zookeeper" % "zookeeper" % "3.4.13"
+
 resolvers += "Apache HBase" at "https://repository.apache.org/content/repositories/releases"
+
+
+resolvers += "Apache ZooKeeper" at "https://repository.apache.org/content/repositories/releases"
+
 
 resolvers += "Thrift" at "http://people.apache.org/~rawson/repo/"

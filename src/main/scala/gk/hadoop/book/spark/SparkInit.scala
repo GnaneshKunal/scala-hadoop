@@ -1,4 +1,4 @@
-package gk.hadoop.book.scala
+package gk.hadoop.book.spark
 
 import org.apache.spark.sql._
 
