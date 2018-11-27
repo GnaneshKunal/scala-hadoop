@@ -10,7 +10,7 @@ import java.io.IOException
 object ExampleClient extends App {
   val config = HBaseConfiguration.create()
 
-  val admin = new AsyncHBaseAdmin(config)
+  // val admin = new AsyncHBaseAdmin(config)
 
 //  val tableName = TableName.valueOf("test")
 //  val htd = new HTableDescriptor(tableName)
@@ -58,6 +58,6 @@ object ExampleClient extends App {
 //
 //  table.close()
 
-  admin.close()
+  // admin.close()
 
 }
