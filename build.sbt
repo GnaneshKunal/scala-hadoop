@@ -27,6 +27,11 @@ libraryDependencies += "org.apache.hbase" % "hbase" % "2.0.0-alpha4" pomOnly()
 
 libraryDependencies += "org.apache.hbase" % "hbase-common" % "2.0.0-alpha4"
 
+libraryDependencies += "org.apache.kafka" %% "kafka" % "2.1.0"
+
+libraryDependencies += "org.apache.kafka" % "kafka-clients" % "2.1.0"
+
+
 resolvers += "Apache HBase" at "https://repository.apache.org/content/repositories/releases"
 
 
