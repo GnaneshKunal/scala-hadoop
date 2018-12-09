@@ -9,6 +9,8 @@ assemblyMergeStrategy in assembly := {
   case x => MergeStrategy.first
 }
 
+// fork in run := true
+
 libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.2.0"
 
 libraryDependencies += "com.typesafe" % "config" % "1.3.0"
