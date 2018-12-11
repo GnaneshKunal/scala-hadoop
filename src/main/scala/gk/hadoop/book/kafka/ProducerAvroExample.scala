@@ -35,7 +35,7 @@ object ProducerAvroExample extends App {
 	"name": "Customer",
 	"doc": "Customer Record",
 	"fields": [
-		  { "name": "id", "type": "string" },
+		  { "name": "id", "type": "int" },
 		  { "name": "name", "type": "string" },
 		  { "name": "email", "type": ["null", "string"], "default": "null"}
 	]
@@ -44,7 +44,7 @@ object ProducerAvroExample extends App {
   )
 
   val datum = new GenericData.Record(schema)
-  datum.put("id", "123")
+  datum.put("id", 123)
   datum.put("name", "gnanesh")
   datum.put("email", "me@gnanesh.com")
 
